@@ -1,0 +1,12 @@
+cp-copy files
+mv-moves/rename files
+rm-delete
+mkdir-make dirctory	
+cd-change directory
+ls -list
+whoami-tells you your user name
+touch-creates files
+ls-F-shows you what's a file/directory
+nano-opens nano
+cat-opens file & shows contents
+less-opens file,shows contents & can handle lg text files 
