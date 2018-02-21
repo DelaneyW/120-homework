@@ -52,5 +52,5 @@ After I read through the Wikipedia page on text editors. I found it extremely he
   - Read and copied Markdown cheat sheet into file in atom
   -  Used "toggle command palette" to open preview of text displaying markdown language
 
-"I then created a summary of my homework for this week using markdown language. I used the cheat sheet that I had copied into atom earlier to form lists, headings,a link,a inline code, and add an image file. I had a really hard time adding the image file. First I had trouble taking a screenshot, but I googled it and figured it out.
-![Image of my editor](Screenshot1-file.jpeg)
+"I then created a summary of my homework for this week using markdown language. I used the cheat sheet that I had copied into atom earlier to form lists, headings,a link,a inline code, and add an image file. I had a really hard time adding the image file. First I had trouble taking a screenshot, but I googled it and figured it out. I also had a lot of trouble linking my image. I ended up making a url for it because that's a method I found through google. 
+ ![Image of my editor](https://www.flickr.com/photos/156445420@N04/39497820465/in/dateposted-public/)
