@@ -18,4 +18,4 @@ I did this by entering in a text function and adding my "Hello Word!" text strin
 
 ## Final sketch
 
- ![this is my final homework 3 Sketch](course-work/images_w3/hws.png)
+ ![this is my final homework 3 Sketch](course-work/images_w3/hws.png) 
