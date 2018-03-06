@@ -1,3 +1,3 @@
-function setup(){
-    text("Hello World!", 0, 10);
-}
+function setup() {
+     text("hello world", 0, 10);
+   }

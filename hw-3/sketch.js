@@ -11,7 +11,7 @@ function setup() {
 
 
 //Setting up draw function
-function draw()
+function draw() {
 
      //Creating text line in p5 with string "Hello world!"
     // This is going to be positioned at x300, y200 ).
