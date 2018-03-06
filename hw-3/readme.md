@@ -14,8 +14,4 @@ To get rolling with p5.js I downloaded the empty p5.js file mentioned above, mov
 I did this by entering in a text function and adding my "Hello Word!" text string. After that I learned about the setup, and draw functions and put them into action. Next I explored different 2-d shapes that I could create through p5.js and the code output function of the class website. I thought the quad was neat. I then practiced using comments on my code and learned how to create a background. Next, I created my final "hello world!" sketch complete with a light blue background. Lastly, I saved my work, committed it, fetched it, created a master branch through github pages for it, and linked it to my read.me.
 
 ## Problems
- I ran into a problem bringing my project into the browser. It slowed me down quite alot. First I thought there was something wong with my plug-in or my computer, and I tried a bucnch of stuff to fix it. I tried uninstalling and re-installing my plug-in, restarting my computer, using someone else's computer. After talking to Michael I realised that I had just been trying to open the sketch file and not the index.html file.
-
-## Final sketch
-
- ![this is my final homework 3 Sketch](course-work/images_w3/hws.png) 
+ I ran into a problem bringing my project into the browser. It slowed me down quite a lot. First I thought there was something wrong with my plug-in or my computer, and I tried a bunch of stuff to fix it. I tried uninstalling and re-installing my plug-in, restarting my computer, using someone else's computer. After talking to Michael I realized that I had just been trying to open the sketch file and not the index.html file.
