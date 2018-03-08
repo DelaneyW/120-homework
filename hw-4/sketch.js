@@ -4,7 +4,7 @@ function setup(){
   createCanvas( 600,600 )
 
   //promting background color
-  background( 'rgb(36, 0, 54)');
+  background( 'rgb(58, 28, 73)');
 
   //placing everything in the center
 
@@ -16,7 +16,7 @@ function setup(){
   ellipse( 0, 60, 185, 255);
 
 //Neck
-  fill('rgb(204, 162, 137)');
+  fill('rgb(203, 158, 131)');
   rect(-55, 105, 105, 200);
 
 //Face
@@ -24,7 +24,8 @@ function setup(){
    ellipse( 0, 60, 155, 200 );
 
 //Nose
-  fill('rgb(230, 174, 150)');
+  stroke('rgb(204, 142, 114)');
+  fill('rgb(220, 172, 147)');
   triangle( 0, 25, 15, 85, -15, 85);
 
  //Lips
@@ -37,12 +38,31 @@ stroke('rgb( 33, 18, 1 )' );
  strokeWeight( 7 );
    line(15, 25, 55, 26);
   line(-15, 25, -55, 26);
-
 //Eyes
-  strokeWeight(13);
+  strokeWeight(20);
   stroke( 'rgb(0, 0, 0)');
   point( 32, 50);
-
+  point( -32, 50);
+//Eyeballs
+  strokeWeight(18);
+  stroke( 'rgb( 255, 255, 255)');
+  point( 32, 50);
+  point( -32, 50);
+//Eyecolor
+  strokeWeight(12);
+  stroke( 'rgba(15, 87, 24, 0.82)');
+  point( 32, 50);
+  point( -32, 50);
+//Pupils
+  strokeWeight(6);
+  stroke( 'rgb(0, 0, 0)');
+  point( 32, 50);
+  point( -32, 50);
+//Glasses
+ noFill();
+ rect( 17, 35, 43, 40, 5);
+ rect( -58, 35, 43, 40, 5);
+ line(-25, 35, 25, 35);
 
     //Body
   noStroke();
