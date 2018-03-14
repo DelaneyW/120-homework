@@ -25,9 +25,11 @@ mvRec = mvRec + 1;
       strokeWeight(6)
       stroke( 'rgb(0, 0, 0)');
 
+ //Ending sandbox
+   pop();
 
         arc( 50, 160, 80, 80, 0, QUARTER_PI + mouseX);
-        arc( -50, 160, -80, 80, 0, QUARTER_PI + mouseX);
+ //Creating hair using circleY variable.
 
         ellipse( mouseX, mouseY, -200 );
         rect( mvRec, 0, 80, 34);
