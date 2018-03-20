@@ -15,10 +15,15 @@ function draw(){
   ellipse( moveD, 10, 200, 70);
 
   fill( 'teal');
+  ellipse( moveD, 46, 55, 55);
+  let red = floor( random(150) );
+    let green = floor( random(150) );
+    let blue = floor( random(150) );
+    //fill( red, green, blue );
   ellipse( windowWidth/2, windowHeight/2, 90, 90);
   stroke('white');
 
-  ellipse( moveD, 46, 55, 55);
+
 
 
   stroke('white');
@@ -30,6 +35,4 @@ function draw(){
   for (var i=0; i<width; i++){
     var y = i%200;
     line ( 0, i, y , i);}
-
-
 }
