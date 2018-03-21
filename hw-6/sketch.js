@@ -1,33 +1,55 @@
- //let rand1= random( 20, 600);
-//  var coTr = map( mouseX, 0, 1200, 0, 183);
-  let rcol = 184
- //let pos1 = windowWidth - 80
- bcol= 180
- gcol =160
+  //declaring red value for bg
+    let rcol = 184
+  //declaring blue value for bg
+    let bcol= 180
+  //decaring green value for bg
+    let gcol =160
+  //setting up variable to for movement
+    var moveD = 150
 
- var moveD = 150
+    var rc = floor( random(150) );
+    var gc = floor( random(150) );
+    var bc = floor( random(150) );
+
 function setup(){
-
-
-
-   createCanvas( windowWidth, 625);
-
-
+  //creating canvas
+  createCanvas( windowWidth, 625);
+//chose not to setup background here so I could create background effect in draw
 }
 
 function draw(){
-     rcol = map( mouseX, 0, 1000, 0, 255);
+  //declaring moveD to have value of moveD so it will move obects
   moveD = moveD + 1;
-  background( rcol, gcol, bcol);
-  fill( 'white' );
-  ellipse( moveD, 10, 200, 70);
 
+  //setting up walls to constrain teal ellipse
+    let wall1 = 5 ;
+    let wall2 = windowWidth - 200;
+  //creating var to constrain teal ellipse
+    let conE = constrain( moveD, wall1, wall2 );
+
+  //setting up walls to constrain white ellipse
+    let wall3 = 10 ;
+    let wall4 = 450;
+
+  //setting up var to constrain white ellipse
+    let conO = constrain( moveD, wall3, wall4 );
+
+  //Using var and map to create background color effect
+     rcol = map( mouseX, 0, 1000, 0, 255);
+  //setting background color using vars from above
+     background( rcol, gcol, bcol);
+
+  //Setting fill to color ellipse white
+      fill( 'white' );
+  //creating moving white oval
+      ellipse( conO, 10, 200, 70);
+
+  //creating moving teal circle to be placed below oval
   fill( 'teal');
-  ellipse( moveD, 46, 55, 55);
-  let red = floor( random(150) );
-    let green = floor( random(150) );
-    let blue = floor( random(150) );
-  fill( red, green, blue );
+  ellipse( conE, 46, 55, 55);
+
+
+  fill( rc, gc, bc );
   ellipse( windowWidth/2, 400, 90, 90);
   stroke('white');
 
