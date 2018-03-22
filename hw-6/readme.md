@@ -6,4 +6,4 @@ A majority of this week’s work for me was debugging the code I didn’t unders
 ## Problems
 The functions I struggled most to use were mod, and random. I initially wanted to use mode to create a pattern of triangles, but I couldn’t manage to get it to work, and finally scrapped the idea. With the random function it took me a long time to figure out the input parameters.
 
-![Image of my portrait](hw-6-pic.png)
+![Image of my portrait](hw-6/hw-6-pic.png)
