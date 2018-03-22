@@ -5,5 +5,3 @@ This week we were introduced to math functions in p5.js. I had a little bit of a
 A majority of this week’s work for me was debugging the code I didn’t understand and struggling to integrate the math function within my sketch. I did manage to integrate addition, subtraction, multiplication, division, modulo, constrain, floor, use of the random function and use of the map function.
 ## Problems
 The functions I struggled most to use were mod, and random. I initially wanted to use mode to create a pattern of triangles, but I couldn’t manage to get it to work, and finally scrapped the idea. With the random function it took me a long time to figure out the input parameters.
-
-![Image of my portrait](hw-6/hw-6-pic.png)
