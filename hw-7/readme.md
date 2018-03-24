@@ -55,3 +55,5 @@ function mousePressed() {
 
 
 ## How did you alter the sketch?
+
+I set up two if functions inside the mousePressed functon to determine the color variation of the cicle based on the location of the circle when mouse is pressed.

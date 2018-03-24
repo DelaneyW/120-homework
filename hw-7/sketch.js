@@ -51,16 +51,19 @@ function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
 
-    if (ball.x >= width/3){
-    ball.color = ('teal');
-    ball.stroke = ('green');
+    if (ball.y > height/2){
+/// Setting a random variation of purple to be applied when mouse is clicked and ball.y > height/2
+      ball.r = random(30,150);
+      ball.g = random(0,10);
+      ball.b = random(35,155);
 
-    }
-    if ( ball.x< width/3 ){
+}
 
-      ball.r = random(25-150);
-      ball.b = random(35-255);
-      ball.g =10;
+    if ( ball.y < height/2 ){
+  /// Setting a random variation of green to be applied when mouse is clicked and ball.y < height/2
+      ball.r = random(3,10);
+      ball.g = random(10,155);
+      ball.b = random(35,155);
 
     }
 }
