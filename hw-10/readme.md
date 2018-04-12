@@ -1,15 +1,16 @@
-# HW-4
+
+# HW-10
 
 ## Introduction
 
-This week the assignment was to create a monster or self-portrait. I chose to create the portrait. I started this week off reading and watching through the content in the online classroom, and by the time I transitioned into actually creating the piece I had a lot more tools in my tool-kit. I really enjoyed this assignment, and I could tell by the end of my sketch that I was mostly acclimated to the basic functions of
-p5.js.
+This week the assignment was to create two assignments using the array information we learned last week and the topic of this week creating our own functions, one assignment altering an old sketch and one creating a new one. I felt pretty comfortable using arrays in a loop after reading and watching the videos.
 
 ## Problems
-I actually felt like I didn’t struggle too hard with technical difficulties this week. I did have a bit of trouble creating a shape that would work for my lips. I started by using the quad argument and then moved to a triangle because I had such a hard time shaping the quad in the way I wanted. I hit error messages a few times but was able to recover relatively quickly once I looked at my error messages.
+But I struggled with understanding both the mechanical aspects and applying the lesson on functions. I had trouble assigning input parameters correctly. I also had trouble with the placement of the for loops. For quite a while I had placed one just outside of draw and eventually I did figure out that I just needed to move it which felt a little frustrating.
 
 ## Work
-The bulk of this week’s assignment was figuring out how to apply basic 2-D shapes to a canvas while sticking to the order of operations. I started my project by sketching out a draft of my portrait on to graph paper. My first step in atom was using the transform function to center 0,0 in the middle of my canvas. I’m so glad that I decided to use transform, I think it probably saved me a lot of time. Then I created shoulders for myself by curving a large rectangle and placing it at the bottom of my canvas. I created a neck also using a rectangle and to get the shape of the hair that I wanted I had to use a ellipse and a triangle. At that point I ran into an order of operations snafu and had to reconfigure my order of operations. I placed the face and the nose fairly easily but I spent a ton of time running different shapes and placements for the lips. To create the eyes I used the point argument in various sizes, and colors and layered them together. I used the line argument to place the eyebrows but I wish that I could have figured out another way to convey them because I don’t love the way it looks. Lastly I created the glasses using curved rectangles and a line argument which actually worked pretty well. Overall I really enjoyed this assignment and feel like it progressed my p5.js ability quite a lot.
-
-## Completed Portrait
-![Image of my portrait](sphw-4.png)
+Once I got through all the readings and videos for functions I started on editing an old sketch.
+##### Old Sketch
+I ended up using my sketch from hw-6, but I messed around with a few other first before I moved to that one. I decided that I would create a function that would add to a shape I already had and turn it into a cloud shape in my sketch and re-use it in another location with different parameters. To integrate arrays, I decided to duplicate a circle I already had across the page using a for loop.
+##### New Sketch
+It took me some time playing around to figure out what I wanted to do with this project, but I ended up with a product that I like a lot. I set up two arrays at the top of the page, one for greyscale color variables and the other to use while placing points across the screen. Next, I created my own function called stripes with four input parameters. Then I used the rotate function to make the piece circular, repetitive and dynamic. Finally I applied the color array to the stripes I had made.
