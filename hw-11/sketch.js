@@ -1,59 +1,65 @@
-  //Creating object
-//temp got rid of mouse x mouse y crazy biz to test basic function
-  // let fishy = new Fish( mouseX + 10, mouseX + 50, mouseX + 90, mouseX + 25, 'orange');
-  let fish = new Fish(10, 50);
+//Setting up shape array
+let shape = [];
+//setting number of numOfShapes
+let numOfShapes = 15;
 
-// Declare the setup function
 function setup() {
-
-    // create a canvas 600px wide and 400px high
-    createCanvas( windowWidth, 400 );
-
-    // color the background 'pink'
-    background('rgb(94, 147, 131)' );
-}
-
-  function draw(){
-    //Getting rid of stroke
-    //noStoke();
-    fish.show();
-
-
-    // quad( 10, 10, 50, 50, 50, 10, 10, 50);
-    // triangle( 50, 10, 50, 50, 90, 25);
+  createCanvas(800,400);
+  //Using for loop to create shapes
+  for (let i = 0; i < numOfShapes; i++) {
+    shape.push(new Shape());
   }
-    class Fish {
-  // constuctor(x,y,head_1, head_2,clr){
-    constructor( x, y) {
-      //x = 10, y = 50
-      //head_1 = 90, head_2 = 25
-      this.x = 10;
-      this.y = 50;
-      this.head_1 = 90;
-      this.head_2 = 25;
-      this.color = 'orange';
-
-        }
-    show() {
-      // push();
-
-        noStroke();
-        //Creating a quad shape
-        //Creating a triangle
-      //Asigning shapes to Fish
-      fill( this.clr );
-      quad( this.x, this.x, this.y, this.y, this.y, this.x, this.x, this.y);
-      //triangle( y, x, y, y, head_1, head_2);
-
-
-
-
-      // pop();
-
-    }
-
-    follow() {
-      this.x = mouseX + 10;
-      this.y = mouseY + 50;
 }
+
+function draw() {
+  background('rgb(96, 156, 150)');
+  for (var i = 0; i < shape.length; i++) {
+    shape[i].frame();
+  }
+}
+//Creating a class called shape
+//declaring the methods
+class Shape {
+  constructor(x, y, scale) {
+    this.x = 10;
+    this.y = 50;
+    this.moveX = random(-8, 3);
+    this.moveY = random(-2, 1);
+  }
+
+  frame() {
+    this.display();
+    this.move();
+  }
+
+  display() {
+    push();
+    translate(this.posX, this.posY);
+    scale(this.scale, this.scale);
+
+    fill(random(0,150));
+    stroke('rgb(231, 164, 33)');
+    quad( this.x, this.x, this.y, this.y, this.y, this.x, this.x, this.y);
+    triangle( this.y, this.x, this.y, this.y, this.y + this.y * 0.8, this.y/2);
+
+    // if(this.x>= width){
+    //   ellipse(20,30, 20);
+    //   translate(0,0);
+    // }
+
+    pop();
+
+
+  }
+
+  move() {
+
+    this.x += this.moveX;
+
+    if (this.x >= width/3 || this.x <= 0) {
+      this.moveX = this.moveX * -1;
+    } else if (this.y >= height/2|| this.y <= 0) {
+      this.moveY = this.moveY * -1;
+    }
+  }
 }
