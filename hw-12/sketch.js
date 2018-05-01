@@ -80,7 +80,7 @@ class Orb {
             this.deltaX *= -1;
             ;
         }
-        
+      
         if (this.posY + this.rad >= height || this.posY - this.rad <= 0) {
             this.deltaY *= -1;
 
