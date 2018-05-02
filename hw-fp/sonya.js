@@ -9,16 +9,16 @@
   this.orientation = orientation;
 
 ///Reference to pre-load loadImage
-  this.image = img_S;
+  this.image = sonya_img;
 //speed at which to animate
   this.speed = 4;
 //the size of the pixels taken for animation
   this.size = {
-    w:400,
-    h:800
+    w:250,
+    h:400
 };
 
-  this.sprite_num = -;
+  this.sprite_num = -1;
   //the top left corner of every sub-rec
   this.subRect = [
   [0,0],
@@ -49,7 +49,7 @@
         this.image,
 
         //placement of image
-        0,0
+        0,0)
         //display size of image
         this.size.w, this.size.h,
         //the top left of sub-rec
@@ -57,7 +57,7 @@
         //the size of the subRect
         this.size.w, this.size.h
 
-      );
+
 
       pop();
 }
