@@ -65,8 +65,9 @@
         //update the sprite #
         //updates the subRect positions
         if(frameCount % this.speed === 0){
-          this.sprite_num++;
+          this.sprite_num ++;
           this.sprite_num %= 8;
+
           }
         }
     }
