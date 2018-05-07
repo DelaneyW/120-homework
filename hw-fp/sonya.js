@@ -62,6 +62,10 @@
            image(
                // reference to image in memory
                this.image,
+               // if(this.m_speed = 5) {
+               //   this.image = sprite_img;
+               //
+               // }
                // placement of image on canvas
                // (handled by translate())
                0, 0,
@@ -71,7 +75,10 @@
                this.subRect[this.sprite_num][0], this.subRect[this.sprite_num][1],
                // the size of the subrectangle
                this.size.w, this.size.h
+
+
            );
+
 
            pop();
        }
@@ -83,13 +90,15 @@
            this.sprite_num ++;
            this.sprite_num %= 15;
 
-
+              // if(this.m_speed = 5){
+              //   ellipse(50,90,200);
+              // }
 
              if ( this.pos.x > width || this.pos.x < 0 ) {
                this.m_speed = this.m_speed * -1;
-              this.image = sprite_img_2;                      }
+               this.image = sprite_img_2;                      }
                 this.pos.x = this.pos.x + this.m_speed;
-}
+                 }
 
 
              // this.pos.x ++;
