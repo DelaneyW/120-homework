@@ -1,22 +1,20 @@
 
-  class Sonya {
+  class Sonya_2 {
     constructor(x, y, img, orientation){
         this.pos = {
-            x: 80,
-            y: 130
+            x2: windowWidth,
+            y2: 640
 
         };
 
         this.orientation = orientation;
 
         // A reference to a pre-loaded image in memory
-        this.image = sprite_img;
+        this.image = sprite_img_2;
         // The speed at which to work through subrectangles
         this.speed = 5;
         // The size of our subrectangles
-
-      // corresponds to sprite size
-        this.m_speed = 5;
+        // corresponds to sprite size
         this.size = {
             w: 180,
             h: 400
@@ -50,8 +48,8 @@
 
        display() {
            push();
-
-           translate(this.pos.x, this.pos.y);
+           if(this.pos.x > windowWidth)
+           translate(this.pos.x2, this.pos.y2);
 
            if (this.orientation === 0) {
                scale(1,1);
@@ -66,7 +64,7 @@
                // (handled by translate())
                0, 0,
                // The display size of the image
-               this.size.w/2, this.size.h/2,
+               this.size.w/2 + 10, this.size.h/2 + 10,
                // The top left corner of the sub rectangle
                this.subRect[this.sprite_num][0], this.subRect[this.sprite_num][1],
                // the size of the subrectangle
@@ -79,31 +77,25 @@
        animate() {
            // update the sprite num
            // This adjusts the subrectangle positions
-           // if(this.pos.x < windowWidth) {
-           this.sprite_num ++;
-           this.sprite_num %= 15;
-
-
-
-             if ( this.pos.x > width || this.pos.x < 0 ) {
-               this.m_speed = this.m_speed * -1;
-              this.image = sprite_img_2;                      }
-                this.pos.x = this.pos.x + this.m_speed;
-}
-
-
-             // this.pos.x ++;
-            // else{
-             // this.image = sprite_img_2;
-
-
+           if(this.pos.x2 < windowWidth) {
+             this.pos.x2 = this.pos.x2 -1;
+           } else{
+             // this.pos.x = this.pos.x - 1;
 
            }
-           // if(this.pos.x = windowWidth + 10){
-           //   this.pos.x = this.pos.x * -1;
-           //
-           // }
            // if(mouseIsPressed == true){
            //   i = i ++;
            //
            // }
+
+
+           if (frameCount % this.speed === 1) {
+                 this.sprite_num ++;
+                 this.sprite_num %= 15;
+
+
+
+           }
+       }
+
+   }
