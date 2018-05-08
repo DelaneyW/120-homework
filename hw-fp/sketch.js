@@ -7,13 +7,13 @@ let sprite_img;
 let sprite_img_2;
 //Making a background variable
 let bg;
-//Setting up a color var for the background
+//Setting up a color var for the backgroud
 let col = 255;
 //Loading sprite sheets and a mountain back drop.
 function preload() {
-    sprite_img_2 = loadImage("120-homework/hw-fp/Sonya.png");
-    sprite_img = loadImage("120-homework/hw-fp/Sonya_2.png");
-    bg = loadImage("120-homework/hw-fp/backdrop_m.png");
+    sprite_img_2 = loadImage("sonya_2.png");
+    sprite_img = loadImage("sonya.png");
+    bg = loadImage("backdrop_m.png");
 
 }
 
