@@ -1,16 +1,19 @@
 
-
+//Declaring my arrays to hold my sprite sheets
 let sonyas = [];
 let sonyas_2 = []
+//Declaring variables for my sheets
 let sprite_img;
 let sprite_img_2;
+//Making a background variable
 let bg;
-  let col = 255;
+//Setting up a color var for the background
+let col = 255;
 //Loading sprite sheets and a mountain back drop.
 function preload() {
-    sprite_img_2 = loadImage("sonya_2.png");
-    sprite_img = loadImage("sonya.png");
-    bg = loadImage("backdrop_m.png");
+    sprite_img_2 = loadImage("120-homework/hw-fp/Sonya.png");
+    sprite_img = loadImage("120-homework/hw-fp/Sonya_2.png");
+    bg = loadImage("120-homework/hw-fp/backdrop_m.png");
 
 }
 
@@ -33,8 +36,9 @@ function draw() {
   rect(0,0 , windowWidth, windowHeight/2);
   //Setting background
     background(bg);
-
+    //Setting frame rate to 4
    frameRate( 4 );
+    //Using a for loop to move an animated sonya through out the screen
     for (let i = 0; i < sonyas.length; i++) {
         sonyas[i].frame();
 
